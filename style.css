@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #706e6e;
+}
+header{
+    background-image: url(assets/banner.png);
+    position: relative;
+    background-color: black;
+    height: 100vh; /* 100% of the viewport height */
+    overflow: hidden; 
+}
+header::before {
+    content: "";
+    background-image: url(assets/banner.png);
+    filter: blur(10px); /* Adjust the blur amount as needed */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place it behind the header content */
+}
+
+section{
+    background-color: #0a0a0a7a;
+}
+header section .imagelogo{
+    height: 2em;
+    padding: 30px;
+}
+.imageLogo{
+    width: 10rem;
+}
+.langBtn{
+    width: 8rem;
+    color: white;
+    border: 1px solid rgb(204, 202, 202);
+}
+.signBtn{
+    padding: 5px;
+    background-color: rgb(211, 5, 5);
+    color: white;
+    border: none;
+    width: 6rem;
+    border-radius: 4px;
+}
+.getStarted{
+    background-color: rgb(211, 5, 5);
+    color: white;
+    border: none;
+    font-weight: 700;
+    font-size: 1.3em;
+    width: 10rem;
+    /* padding: 4.2px; */
+    height: 3rem;
+    border-radius: 3px;
+}
+.emailInput{
+    height: 3rem;
+    width: 22em;
+    color: white;
+    padding: 6px;
+    background-color: #414141b2;
+    border: 1px solid rgb(114, 111, 111);
+}
+.langBtn:hover{
+    background-color: #ffffff00 !important;
+    color: black !important;
+}
+.heading{
+    margin-top: 2.2em;
+    font-size: 3.1rem;
+    color: white;
+    font-weight: 800;
+}
+.sideImage{
+    width: 25em;
+}
+
+
+
+/* MEDIA QUERY */
+
+@media (max-width: 764px) {
+    .sec-2content ,.sec-4content,.sideImage {
+        padding-left: 3em;
+        padding-top: 1.3em;
+    }
+    .sec-3content, .sec-5content{
+        padding-left: 1.5em;
+    }
+    .accBtn{
+        padding-left: 1.1em;
+    }
+}
+
+
+@media (max-width:1200px) {
+    .signBtn , .langBtn{
+        margin-left: 5rem;
+    }
+}
+@media (max-width:766px) {
+    .emailInput{
+        width: 17rem;
+        padding: 1.2rem;
+    }
+}
+@media (max-width:777px) {
+    .footerContent{
+        padding: 5rem;
+    }
+}
+
+
+
+.accStyle{    
+    padding: 0.3rem;
+}
+
+.footerContent a {
+    padding-top: 1.1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+
